@@ -821,7 +821,7 @@ private:
 
 protected:
     int b
-
+ 
 public:
     Base()
     {
@@ -830,12 +830,12 @@ public:
     }
 
      // friend function declaration
-    friend void func(base& obj);
+    friend void func(Base& obj);
 };
 
 
 // friend function definition
-void func(base& obj)
+void func(Base& obj)
 {
     cout << "Private Variable: " << obj.a << endl;
     cout << "Protected Variable: " << obj.b;
@@ -846,7 +846,7 @@ int main()
 {
     Base obj;
     funcobj);
-
+ 
     return 0;
 
  }
