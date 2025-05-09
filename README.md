@@ -1,4 +1,4 @@
-# Object Oriented Programming Notes - Last Minute Revision: 
+# Object Oriented Programming Notes - Last Minute Revision:
 
 Here we have last minute revision notes of object oriented programming language. These questions will familiarize you with the most important object-oriented programming concepts and help you ace your job interviews :raised_hands:
 
@@ -14,7 +14,7 @@ In Other Words, it is an approach to problem-solving where all computations are 
 
 ### 2: Class and Object
 
-**Answer**: 
+**Answer**:
 
 **Class**: A class is the building block that leads to Object-Oriented programming. It is a user-defined datatype, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class.
 
@@ -52,13 +52,14 @@ int main() {
 ```
 
 **Output**
+
 > Person name is: Jay
 
 ---
 
 ### 3: Constructor
 
-**Answer**: 
+**Answer**:
 
 - Constructors are special class members which are called by the compiler every time an object of that class is instantiated.
 
@@ -96,14 +97,14 @@ class student
      public:
        int age;
        bool gender;
-    
+
     // Default Constructor
     student(){
       cout<<"Default Constructor"<<endl;
     }
-    
+
     // Parameterised Constructor
-    student(string s, int a, int b)  
+    student(string s, int a, int b)
     {
        name = s;
        age = a;
@@ -112,7 +113,7 @@ class student
     }
 
     // Copy Constructor
-    student (student &p){              
+    student (student &p){
       name = p.name;
       age = p.age;
       gender = p.gender;
@@ -132,7 +133,7 @@ class student
 };
 
 int main()
-{   
+{
     // Default Constructer Call
     student s1;
     s1.printinfo();
@@ -149,29 +150,29 @@ int main()
 ```
 
 **Output**
->Default Constructor\
-Name = \
-Age = 2 \
-Gender = 0 
 
->parameterised constructor \
-Name = sumeet \
-Age = 20 \
-Gender = 1 
+> Default Constructor\
+> Name = \
+> Age = 2 \
+> Gender = 0
 
->copy constructer \
-Name = sumeet \
-Age = 20 \
-Gender = 1 
+> parameterised constructor \
+> Name = sumeet \
+> Age = 20 \
+> Gender = 1
+
+> copy constructer \
+> Name = sumeet \
+> Age = 20 \
+> Gender = 1
 
 ---
 
-
 ### 4: Destructor
 
-**Answer**: 
+**Answer**:
 
-- A destructor is also a special member function as a constructor. Destructor destroys the class objects created by the constructor. 
+- A destructor is also a special member function as a constructor. Destructor destroys the class objects created by the constructor.
 
 - Destructor has the same name as their class name preceded by a tiled (~) symbol.
 
@@ -205,20 +206,17 @@ public:
 
 ---
 
-
 ### 5: The main features of OOPs?
 
 **Answer**: The main four pillar of oops are given below.
 
 ![pillar of OPPS](./assets/images/pillar_of_OOPS.png)
 
-
 ---
 
 ### 6: Inheritance
 
 **Answer**: Inheritance is one of the most important features of Object-Oriented Programming. The capability of a class to derive properties and characteristics from another class is called Inheritance.
-
 
 **Real Life Example**
 
@@ -261,11 +259,11 @@ int main(){
     return 0;
 }
 ```
+
 **Output**
+
 > Base Class \
-Inherited from class A
-
-
+> Inherited from class A
 
 2. **Multiple Inheritance**: when one subclass is inherited from more than one base class is called multiple inheritance.
 
@@ -306,10 +304,10 @@ int main()
 ```
 
 **Output**
->Base class A \
-Base class B \
-Inherited from class A and B
 
+> Base class A \
+> Base class B \
+> Inherited from class A and B
 
 3. **Multilevel Inheritance**: In this type of inheritance, a derived class is created from another derived class.
 
@@ -347,12 +345,12 @@ int main()
     return 0;
 }
 ```
+
 **Output**
+
 > Base class A \
-Inherted from class A \
-Inherited from class B
-
-
+> Inherted from class A \
+> Inherited from class B
 
 4. **Hierarchical Inheritance**: In this type of inheritance, more than one subclass is inherited from a single base class.
 
@@ -386,7 +384,7 @@ int main()
     C obj;
     obj.funcA();
     obj.funcC();
-    
+
     B obj2;
     obj2.funcA();
     obj2.funcB();
@@ -395,12 +393,11 @@ int main()
 ```
 
 **Output**
+
 > Base class A \
-Inherited also from class A \
-Base class A \
-Inherited from class A
-
-
+> Inherited also from class A \
+> Base class A \
+> Inherited from class A
 
 5. **Hybrid Inheritance**: The inheritance in which the derivation of a class involves more than one form of any inheritance is called hybrid inheritance. Basically C++ hybrid inheritance is combination of two or more types of inheritance. It can also be called multi path inheritance.
 
@@ -417,7 +414,7 @@ class B : public A
 {
  	public:
 	  //constructor to initialize x in base class A
- 	  B()      
+ 	  B()
  	  {
  	     x = 10;
  	  }
@@ -426,16 +423,16 @@ class C
  {
  	public:
  	  int y;
-	  
+
 	  //constructor to initialize y
- 	  C()   
+ 	  C()
  	  {
  	      y = 4;
           }
 };
 
 //D is derived from class B and class C
-class D : public B, public C   
+class D : public B, public C
 {
  	public:
  	  void sum()
@@ -445,24 +442,23 @@ class D : public B, public C
 };
 
 int main()
-{	
+{
 	//object of derived class D
-        D obj1;          
+        D obj1;
  	obj1.sum();
  	return 0;
-}               	
+}
 ```
 
 **Output**
-> Sum = 14
 
+> Sum = 14
 
 ---
 
-
 ### 7: Encapsulation
 
-**Answer**: 
+**Answer**:
 
 - In normal term encapsulation is defined as wrapping up of data and information under a single unit.
 - Encapsulation define as binding together the data and function that manipulates them.
@@ -487,7 +483,7 @@ class Encapsulation
 	private:
 	  // data hidden from outside world
 	  int x;
-		
+
 	public:
 	  // function to set value of
 	  // variable x
@@ -495,7 +491,7 @@ class Encapsulation
 	  {
 		x =a;
 	  }
-		
+
 	  // function to return value of
 	  // variable x
 	  int get()
@@ -506,22 +502,23 @@ class Encapsulation
 int main()
 {
 	Encapsulation obj;
-	
+
 	obj.set(5);
-	
+
 	cout<<obj.get();
 	return 0;
 }
 ```
 
 **Output**
+
 > 5
 
 ---
 
 ### 8: Abstraction
 
-**Answer**: 
+**Answer**:
 
 - Data Abstraction is one of the most essential and important feature of Object Oriented Programming in c++.
 - Abstraction means displays only the relevant attributes of objects and hides the unnecessary details like the background details and implementation.
@@ -535,7 +532,6 @@ int main()
 **Real Life Example**
 
 <img src="./assets/images/abstraction.png" width="400" height="400">
-
 
 ```C++
 #include <iostream>
@@ -571,18 +567,18 @@ int main()
 ```
 
 **Output**
+
 > a = 10 \
-b = 20
+> b = 20
 
 ---
 
 ### 9: Polymorphism
 
-**Answer**: 
+**Answer**:
 
 - The word polymorphism means having many forms. Polymorphism occurs when there is a hierarchical mode inheritance.
 - C++ polymorphism means that a call to a member function will cause a different function to be executed depending on the type of object that invokes the function.
-
 
 **Advantages**
 
@@ -592,12 +588,11 @@ Polymorphism in C++ allows us to reuse code by creating one function that’s us
 
 <img src="./assets/images/polymorphism.png" width="400" height="400">
 
-
 There are 2 types of Polymorphism:
 
     1. Compile time Polymorphism
     2. Run time Polymorphism
-   
+
 1. **Compile time Polymorphism**: Compile-time polymorphism is a polymorphism that is, the function call is resolved during the compilation process.
 
 We can achieve Compile-time polymorphism by two ways:
@@ -606,7 +601,6 @@ We can achieve Compile-time polymorphism by two ways:
 
 - When there are multiple functions with the same name but take different parameters as an arguments then these function are said to be overloaded.
 - Functions can be overloaded by changing the number of arguments or and changing the type of arguments.
-
 
 ```C++
 #include<bits/stdc++.h>
@@ -641,10 +635,10 @@ int main()
 ```
 
 **Output**
-> function with no argument \
-function with int argument \
-function with double argument
 
+> function with no argument \
+> function with int argument \
+> function with double argument
 
 2. **Operator Overloading**: C++ also provides the option to overload operators So a single operator ‘+’, when placed between integer operands, adds them and when placed between string operands, concatenates them.
 
@@ -657,7 +651,7 @@ private:
    int real, imag;
 public:
    Complex(int r = 0, int i = 0) {real = r; imag = i;}
-	
+
    // This is automatically called when '+' is used with
    // between two Complex objects
    Complex operator + (Complex const &obj) {
@@ -678,8 +672,8 @@ int main()
 ```
 
 **Output**
-> 12 + i9
 
+> 12 + i9
 
 2. Runtime Polymorphism
 
@@ -687,10 +681,10 @@ int main()
 - This type of polymorphism is achieved by Function Overriding or Virtual function.
 
 **Virtual Function**
+
 - Virtual is a keyword in C++
 - A virtual function is a member function in the base class that we expect to redefine in derived classes
 - When a virtual function is defined in a base class, then in runtime on the basis of type of object assigned to it, the respective class function is called.
-
 
 ```C++
 #include <iostream>
@@ -716,15 +710,15 @@ int main() {
     // Create the object of base and derived class
     Base base;
     Derived derived;
-    
+
     // In runtime, its depend on which class object
     // we are assigning in base pointer.
-    
+
     // Base Class print function will call,
     // as we assign base class object
     bptr = &base;
     bptr->print();
-    
+
     // Derived Class print function will call,
     // as we assign derived class object
     bptr = &derived;
@@ -735,8 +729,9 @@ int main() {
 ```
 
 **Output**
+
 > Base Class Function \
-Derived Class Function
+> Derived Class Function
 
 ---
 
@@ -745,7 +740,7 @@ Derived Class Function
 **Answer**
 
 - Sometimes implementation of all function cannot be provided in a base class because we don’t know the implementation. Such a class is called abstract class.
-Example, let Shape be a base class. We cannot provide implementation of function draw() in Shape, but we know every derived class must have implementation of draw().
+  Example, let Shape be a base class. We cannot provide implementation of function draw() in Shape, but we know every derived class must have implementation of draw().
 - Class is Abstract, if we have atleast one pure virtual function.
 
 ---
@@ -776,7 +771,6 @@ class X
 - A friend class can access private and protected members of other class in which it is declared as friend.
 - It is sometimes useful to allow a particular class to access private members of other class.
 
-
 ```C++
 #include<iostream>
 using namespace std;
@@ -784,7 +778,7 @@ using namespace std;
 class A{
    int x;
    public:
-			
+
     A(){
        x=10;
     }
@@ -807,8 +801,8 @@ int main(){
 ```
 
 **Output**
->  The value of x=10
 
+> The value of x=10
 
 #### Friend Function
 
@@ -817,52 +811,51 @@ int main(){
 - Like a friend class, a friend function can be granted special access to private and protected members of a class in C++.
 - They are the non-member functions that can access and manipulate the private and protected members of the class for they are declared as friends.
 
-
 ```C++
 #include <iostream>
 using namespace std;
- 
+
 class Base {
 private:
     int a;
- 
+
 protected:
     int b
- 
+
 public:
     Base()
     {
         a = 1;
         b = 2;
     }
-     
+
      // friend function declaration
     friend void func(base& obj);
 };
- 
- 
+
+
 // friend function definition
 void func(base& obj)
 {
     cout << "Private Variable: " << obj.a << endl;
     cout << "Protected Variable: " << obj.b;
 }
- 
+
 // driver code
 int main()
 {
     Base obj;
     funcobj);
- 
+
     return 0;
-    
+
  }
 ```
 
 **Output**
->  Private Variable: 1 \
-Protected Variable: 2
 
+> Private Variable: 1 \
+> Protected Variable: 2
 
 ---
 
@@ -873,10 +866,210 @@ Protected Variable: 2
 - **Protected** – The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
 - **Public** – The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
 
+---
+
+## 🗃️ File Handling through C++ Classes.
+
+**Answer**:
+
+In C++, input and output operations are performed through streams - sequences of bytes. While `cin` and `cout` handle standard input/output streams, file handling uses specialized stream classes from the `<fstream>` library.
+
+#### File Stream Classes:
+
+1. `ifstream`: Input file stream (reading)
+2. `ofstream`: Output file stream (writing)
+3. `fstream`: Both input and output operations
+
+#### Main Operations in File Handling:
+
+1. **Opening a File**
+2. **Reading/Writing Operations**
+3. **Closing a File**
+
+#### 📖 File Opening Modes:
+
+```cpp
+ios::in     // Open for input operations
+ios::out    // Open for output operations
+ios::app    // Append mode
+ios::binary // Binary mode
+ios::ate    // Open and seek to end
+ios::trunc  // truncate file if it exists
+```
+
+### ✅ Common Functions for Text Files:
+
+- Function Description
+- open() ---> Opens a file for reading or writing.
+- close() ---> Closes an opened file.
+- is_open() ---> Checks if a file is open.
+- eof() ---> Checks if end-of-file is reached.
+- get() ---> Reads a single character.
+- put() ---> Writes a single character.
+- getline() ---> Reads a full line (with spaces).
+- write() ---> Writes binary/text data to a file (often for binary too).
+- read() ---> Reads binary/text data from a file.
+- seekg() ---> Moves input (get) pointer.
+- seekp() ---> Moves output (put) pointer.
+- tellg() ---> Returns current position of input pointer.
+- tellp( --->) Returns current position of output pointer.
+
+#### ✅ Common Binary File Functions:
+
+| Function                          | Description                            |
+| --------------------------------- | -------------------------------------- |
+| `write((char*)&obj, sizeof(obj))` | Writes binary representation of object |
+| `read((char*)&obj, sizeof(obj))`  | Reads binary data into object          |
+| `seekg()`, `seekp()`              | Moves file pointer position            |
+| `tellg()`, `tellp()`              | Gets current pointer position          |
+
+**Opening Binary Files:**
+
+```cpp
+// For reading binary files
+inFile.open("filename", ios::in | ios::binary);
+
+// For writing binary files
+outFile.open("filename", ios::out | ios::binary);
+```
+
+#### Basic Example:
+
+```cpp
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string filename = "sample.txt";
+    string line;
+
+    // Writing to the file
+    try {
+        ofstream fout(filename);
+        if (!fout) {
+            throw runtime_error("Error: Could not open file for writing.");
+        }
+
+        fout << "Welcome to C++ File Handling!\n";
+        fout << "This is an example using exception handling.\n";
+        fout << "E. Balagurusamy - File Stream Example.\n";
+
+        fout.close();
+        cout << "Data written to file successfully.\n";
+    } catch (const exception &e) {
+        cerr << e.what() << endl;
+        return 1;
+    }
+
+    // Reading from the file
+    try {
+        ifstream fin(filename);
+        if (!fin) {
+            throw runtime_error("Error: Could not open file for reading.");
+        }
+
+        cout << "\nContents of the file:\n";
+        while (getline(fin, line)) {
+            cout << line << endl;
+        }
+
+        fin.close();
+    } catch (const exception &e) {
+        cerr << e.what() << endl;
+        return 1;
+    }
+
+    return 0;
+}
+```
+
+#### Important Points:
+
+- Always close files after operations are complete
+- Check if file opened successfully before operations
+- Use appropriate error handling
+- Binary mode is useful for non-text files
 
 ---
+
+## 🧑‍💻Templates in C++
+
+### ✅ Introduction
+
+Templates are a powerful feature in C++ that enables generic programming. They allow you to:
+
+- Write functions and classes that work with any data type
+- Maintain type safety while providing flexibility
+- Reduce code duplication
+- Create reusable components
+
+### ✅ Function Templates
+
+Function templates provide a way to write a single function that works with multiple data types.
+
+```cpp
+// Basic function template syntax
+template <class T>
+T maximum(T a, T b) {
+    return (a > b) ? a : b;
+}
+
+// Usage examples
+int main() {
+    int i = maximum(10, 20);         // T = int
+    float f = maximum(10.5f, 20.5f); // T = float
+    char c = maximum('A', 'B');      // T = char
+    return 0;
+}
+```
+
+### ✅ Class Templates
+
+Class templates allow you to define classes that can work with different data types.
+
+```cpp
+template <class T>
+class Container {
+    T data;
+public:
+    Container(T value) : data(value) {}
+    T getValue() { return data; }
+    void setValue(T value) { data = value; }
+};
+
+// Usage
+int main() {
+    Container<int> intBox(5);
+    Container<string> strBox("Hello");
+
+    cout << intBox.getValue();    // prints: 5
+    cout << strBox.getValue();    // prints: Hello
+    return 0;
+}
+```
+
+### ✅ Function Overloading vs Function Templates
+
+| Aspect      | Function Overloading                                            | Function Templates                             |
+| ----------- | --------------------------------------------------------------- | ---------------------------------------------- |
+| Definition  | Multiple functions with same name but different parameter types | One generic function defined using template    |
+| Code Reuse  | Requires separate implementation for each type                  | Single implementation works for multiple types |
+| Type Safety | Compile-time checking                                           | Strong type checking at instantiation          |
+| Flexibility | Limited to defined types                                        | Works with any compatible type                 |
+
+### 📌 Key Points:
+
+1. Templates are processed at compile time
+2. No runtime overhead
+3. Support both built-in and user-defined types
+4. Can have multiple template parameters
+5. Enable type-safe generic programming
+
 <div align="center">
-  Made with ❤️ by Jay
+  Made with ❤️ by Jay Kotwal
 </div>
 
 ---
